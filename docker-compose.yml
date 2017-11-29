@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+      monyog:
+         build: ./monyog/.
+         restart: on-failure
+         volumes:
+            - "/mnt/data/monyog/:/usr/local/MONyog"
+         ports:
+            - "5555:5555"
